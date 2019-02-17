@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTravelType"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/travel_type"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/tvTravelType"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rgTravelType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvTravelType">
+
+        <RadioButton
+            android:id="@+id/btnOnFoot"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            android:text="@string/on_foot"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/btnPublicTransport"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.2"
+            android:text="@string/public_transport" />
+
+        <RadioButton
+            android:id="@+id/btnByCar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            android:text="@string/by_car" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvNumberOfDays"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/number_of_visit_days"
+        android:textSize="14sp"
+        android:layout_below="@id/rgTravelType"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/tvNumberOfDays"/>
+
+    <com.appyvet.materialrangebar.RangeBar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rbNumberOfDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mrb_pinRadius="14dp"
+        app:mrb_selectorSize="8dp"
+        app:mrb_tickEnd="5"
+        app:mrb_tickInterval="1"
+        app:mrb_tickStart="1"
+        app:mrb_tickHeight="3dp"
+        app:mrb_rangeBar="false"
+        android:layout_below="@id/tvNumberOfDays"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/create"/>
+</RelativeLayout>

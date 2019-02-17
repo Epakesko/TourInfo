@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true" />
+
+    <RelativeLayout
+        android:id="@+id/rlNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <Space
+            android:id="@+id/fakeView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/btnPreviousResults"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/previous"
+            android:layout_alignEnd="@id/fakeView2"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnNextResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/fakeView2"
+            android:layout_alignParentEnd="true"
+            android:text="@string/next" />
+
+        <Button
+            android:id="@+id/btnCreateItinerary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/create_itinerary"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvVenues"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_above="@+id/rlNavigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/menu_margin_hor"
+        android:layout_marginRight="@dimen/menu_margin_hor"
+        android:layout_marginBottom="@dimen/menu_margin_ver"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnViewVenues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_selected_venues"/>
+
+        <Button
+            android:id="@+id/btnSearchVenues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_venues"/>
+
+        <Button
+            android:id="@+id/btnViewItinerary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_itinerary"/>
+    </LinearLayout>
+
+</RelativeLayout>

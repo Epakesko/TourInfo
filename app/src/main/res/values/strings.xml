@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">TourInfo</string>
+    <string name="new_itinerary">New itinerary</string>
+    <string name="load_itinerary">Load itinerary</string>
+    <string name="settings">Settings</string>
+
+    <string name="city">City</string>
+    <string name="price_category">Price category (1 = cheapest, 4 = most expensive)</string>
+    <string name="travel_type">Travel type</string>
+
+    <string name="place_categories">Place categories</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="bars">Bar</string>
+    <string name="coffee">Coffee</string>
+    <string name="arts">Arts</string>
+    <string name="shops">Shops</string>
+    <string name="outdoors">Outdoors</string>
+    <string name="sights">Sights</string>
+    <string name="trending">Trending</string>
+    <string name="top">Top picks</string>
+
+    <string name="search_places">Search places</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="on_foot">On foot</string>
+    <string name="public_transport">Public transport</string>
+    <string name="by_car">By car</string>
+    <string name="add_to_selection">Add to selection</string>
+    <string name="url">Url:</string>
+    <string name="categories">Categories:</string>
+    <string name="rating">Rating:</string>
+    <string name="description">Description:</string>
+    <string name="name">Name:</string>
+    <string name="venue_logo">VENUE LOGO</string>
+    <string name="already_selected">Already selected</string>
+    <string name="confirm_destination">Confirm destination</string>
+    <string name="number_of_visit_days">Number of visit days</string>
+    <string name="create">Create!</string>
+    <string name="create_itinerary">Create itinerary</string>
+    <string name="view_selected_venues">View selected venues</string>
+    <string name="search_venues">Search venues</string>
+    <string name="view_itinerary">View itinerary</string>
+    <string name="delete">DELETE</string>
+    <string name="hours">Hours:</string>
+    <string name="price">Price:</string>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true" />
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/not_applicable"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:contentDescription="@string/venue_logo"/>
+
+    <TextView
+        android:id="@+id/tvNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_below="@id/ivPhoto"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/ivPhoto"
+        android:layout_toEndOf="@id/tvNameLabel"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_below="@id/tvName"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/tvName"
+        android:layout_toEndOf="@id/tvDescriptionLabel"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvRatingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rating"
+        android:layout_below="@id/tvDescription"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/tvDescription"
+        android:layout_toEndOf="@id/tvRatingLabel"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvCategoriesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/categories"
+        android:layout_below="@id/tvRating"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/tvRating"
+        android:layout_toEndOf="@id/tvCategoriesLabel"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvUrlLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/url"
+        android:layout_below="@id/tvCategories"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/tvCategories"
+        android:layout_toEndOf="@id/tvUrlLabel"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvPriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:layout_below="@id/tvUrl"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/tvUrl"
+        android:layout_toEndOf="@id/tvPriceLabel"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvHoursLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hours"
+        android:layout_below="@id/tvPrice"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/tvPrice"
+        android:layout_toEndOf="@id/tvHoursLabel"
+        android:layout_margin="4dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnSelectVenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/add_to_selection"
+        android:visibility="gone"/>
+</RelativeLayout>

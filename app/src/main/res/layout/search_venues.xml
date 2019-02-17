@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvPriceCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/price_category"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/tvPriceCategory"/>
+
+    <com.appyvet.materialrangebar.RangeBar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rbPriceCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mrb_pinRadius="14dp"
+        app:mrb_selectorSize="8dp"
+        app:mrb_tickEnd="4"
+        app:mrb_tickInterval="1"
+        app:mrb_tickStart="1"
+        app:mrb_tickHeight="3dp"
+        android:layout_below="@id/tvPriceCategory"/>
+
+    <TextView
+        android:id="@+id/tvPlaceCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/place_categories"
+        android:textSize="14sp"
+        android:layout_below="@id/rbPriceCategory"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/tvPlaceCategories"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/tvPlaceCategories">
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rgVenueType1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <RadioButton
+                android:id="@+id/cbRestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurants"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/cbBars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bars"/>
+            <RadioButton
+                android:id="@+id/cbShops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shops"/>
+            <RadioButton
+                android:id="@+id/cbTrending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trending"/>
+
+            <RadioButton
+                android:id="@+id/cvTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/top"/>
+
+        </RadioGroup>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rgVenueType2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/cbCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/coffee"/>
+            <RadioButton
+                android:id="@+id/cbSights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sights"/>
+            <RadioButton
+                android:id="@+id/cbArt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arts"/>
+            <RadioButton
+                android:id="@+id/cbOutdoors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/outdoors"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnSearchPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/search_places"/>
+</RelativeLayout>
